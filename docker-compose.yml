@@ -19,6 +19,16 @@ services:
             - mongo
         networks: 
             - my-network
+    # frontend: 
+    #     build: ./frontend/my-app/
+    #     ports:
+    #         - "3000:3000"
+    #     volumes: 
+    #         - "./frontend/my-app:/app"
+    #     depends_on: 
+    #         - backend
+    #     networks: 
+    #         - my-network
 networks: 
     my-network:
         driver: bridge
